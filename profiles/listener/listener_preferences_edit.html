@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="../../css/timeline.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./../../css/footer.css">
-    <link rel="stylesheet" href="./css/edit_preference.css"
-  </head>
+    <link rel="stylesheet" href="./css/edit_preference.css">
+</head>
  
   <body>
      <header>
@@ -51,7 +51,7 @@
                     h3 {margin-top:2%}
                 </style>
                 <h3> Update Preferences </h3>
-                <form class="FormPreferencesEdit">
+                <form class="FormPreferencesEdit" id="PreferenceEditForm">
                     <div class="FormUpdatePreference">
                         <button  class='DropDownButton' id="DJs">Choose Which DJs You Want to Get Recommended:</button>
                         <div class = 'DropDownContent' id="DJs">
@@ -157,11 +157,11 @@
                     </div>
                     
                     <div class="SubmitButton">
-                        <button>
-                            Update Preferences
-                        </button>
+                        <input type="submit" id = 'SubmitForm2' value="Submit to Update Preferences!" onmousedown="submitForm();">
+                        </input>
                     </div>
                 </form>
           </main>
         </body>
+        <script src="../listener/javascript/listener_preferences_edit.js"></script>
 </html>
